@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.register {
+  background-color: #F9EDED;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.register .logo {
+  padding: 15px;
+}
+.register .logo img {
+  width: 85px;
+  height: 85px;
+}
+.register .userinput {
+  text-align: center;
+}
+.register .userinput input {
+  width: 250px;
+  height: 35px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+.register .userinput input:focus {
+  background-color: white;
+}
+.register .userinput button {
+  font-size: 25px;
+  transition: 0.8s;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.register .userinput button:hover {
+  background-color: white;
+  color: black;
+}
+.register .image {
+  text-align: center;
+}
+.register .image img {
+  height: 200px;
+  width: 200px;
+}
+
+#Cal {
+  background-color: #F9EDED;
+  width: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  float: left;
+}
+#Cal .calculator .navbar {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 12vh;
+}
+#Cal .calculator .navbar img {
+  height: 85px;
+  width: 85px;
+  padding: 10px;
+}
+#Cal .calculator .Selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#Cal .calculator .Selection .box1 h2 {
+  text-align: center;
+}
+#Cal .calculator .Selection .box1 button {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  margin: 10px;
+  transition: 0.3s;
+}
+#Cal .calculator .Selection .box1 button:hover {
+  background-color: #3F418D;
+  color: white;
+}
+#Cal .calculator .container {
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 10px;
+  margin-bottom: 50px;
+  display: none;
+  transition: 0.5s;
+}
+#Cal .calculator .container .CGPA {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 25px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+}
+#Cal .calculator .container .CGPA .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 5px;
+}
+#Cal .calculator .container .CGPA .boxes .entries {
+  width: 250px;
+}
+#Cal .calculator .container .CGPA .boxes .entries p {
+  font-size: 13px;
+}
+#Cal .calculator .container .CGPA .boxes .entries input {
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 2px;
+}
+#Cal .calculator .container .CGPA .boxes .entries input:focus {
+  outline: none;
+}
+#Cal .calculator .container .CGPA .selectsem label {
+  font-size: 13px;
+}
+#Cal .calculator .container .CGPA .selectsem select {
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 13px;
+}
+#Cal .calculator .container .result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#Cal .calculator .container .result button {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  transition: 0.8s;
+  border: 1px solid black;
+  font-size: 13px;
+}
+#Cal .calculator .container .result button:hover {
+  background-color: #3F418D;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
+#Cal .calculator .container .result p {
+  font-size: 15px;
+}
+#Cal .calculator .container .result .warn {
+  width: 100%;
+  text-align: center;
+  color: red;
+  transition: 0.5s;
+}
+#Cal .calculator .container .result .answer {
+  border-bottom: 1px solid black;
+  width: 100px;
+  height: 30px;
+  font-size: 13px;
+  padding: 2px;
+}
+#Cal .calculator .footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  #Cal .calculator .navbar img {
+    height: 70px;
+    width: 70px;
+  }
+  #Cal .calculator .navbar p {
+    font-size: 13px;
+  }
+  #Cal .calculator .container {
+    width: 90%;
+  }
+  #Cal .calculator .container .CGPA .boxes {
+    gap: 12px;
+  }
+  #Cal .calculator .container .CGPA .boxes .entries p {
+    font-size: 12px;
+  }
+  #Cal .calculator .container .CGPA .selectsem label {
+    font-size: 12px;
+  }
+  #Cal .calculator .container .result .warn {
+    font-size: 10px;
+  }
+  #Cal .calculator .Selection .box1 h2 {
+    font-size: 13px;
+  }
+  #Cal .calculator .footer {
+    font-size: 10px;
+  }
+}
+.register .logo {
+  padding: 10px;
+}
+.register .logo img {
+  width: 70px;
+  height: 70px;
+}/*# sourceMappingURL=style.css.map */

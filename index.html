@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA / CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="register" id="firstpage">
+        <div class="logo">
+            <img src="images/icon.png" alt="" >
+        </div>
+
+        <div class="image">
+            <img src="images/profile.png" alt="">
+        </div>
+
+
+        <div class="userinput">
+
+            <input type="text" placeholder="Type your name . ." id="username">
+            <br><br>
+            <button id="closee"><i class="fa-solid fa-arrow-right" ></i></a> </button>
+
+
+        </div>
+
+
+
+    </div>
+    <section id="Cal">
+        <div class="calculator">
+            <header class="navbar">
+                <img src="images/icon.png" alt="" >
+                <p>Welcome, <span id="userinputname"> </span></p>
+    
+            </header>
+            <div class="Selection">
+                <div class="box1">
+                    <h2>ANNA UNIVERSITY 2021 REGULATION</h2>
+                    <h2>CSE</h2>
+    
+                    <h2>
+                        <button id="b1">CGPA</button>
+                        <button id="b2">GPA</button>
+                    </h2>
+                </div>
+    
+    
+    
+            </div>
+            <div class="container" id="container">
+                <div class="CGPA">
+                    <div class="selectsem box">
+                        <label>SELECT SEMESTER</label>
+                        <select class="shere" id="shere" onchange="displayInputBoxes()" >
+                            <option value="0" >CHOOSE</option>
+                            <option value="1" >1</option>
+                            <option value="2" >2</option>
+                            <option value="3" >3</option>
+                            <option value="4" >4</option>
+                            <option value="5" >5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="boxes" id="booxes">
+                        
+
+         </div>   
+    
+    
+    
+                    <div class="result" id="result">
+                        <button onclick="yourresult()">Calculate</button>
+                        <p>
+                            CGPA IS
+                        </p>
+                        <P class="answer" id="cgpa">
+                            0.0
+                        </P>
+                        <p class="warn" id="warn">
+                        
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <p class="footer">Copyright © Sherin | 2024 All rights reserved.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
